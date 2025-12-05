@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee & Go</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">Coffee <span>&</span> Go</div>
+        <nav>
+            <a href="#about">О нас</a>
+            <a href="#menu">Меню</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <img class="hero-img" src="https://miro.medium.com/v2/resize:fit:1400/1*njE2UVPnj-p4G-x6kYWIhw.jpeg" alt="">
+        <h1 class="hero-title">Coffee & Go</h1>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="block">
+            <h3>Айдентика бренда</h3>
+            <p>Мы создали Coffee&Go для тех, кто ценит не только кофе, но и атмосферу. Наша цель — чтобы вы захотели вернуться ещё до того, как уйдёте.</p>
+        </div>
+
+        <div class="block">
+            <h3>Brand Identity</h3>
+            <p>We created Coffee&Go for people who appreciate not only great drinks but also aesthetics and comfort.</p>
+        </div>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section class="menu-section" id="menu">
+        <div class="menu-text">
+            <h2>Меню, от которого тепло</h2>
+            <p>Кофе, выпечка, десерты — всё, что делает день уютнее.</p>
+            <a class="btn" id="openMenu">Смотреть меню</a>
+        </div>
+       <img class="menu-photo" src="https://villacafe.com.br/blog/wp-content/uploads/2019/01/267558-conheca-mais-sobre-o-latte-art-e-seus-efeitos-760x460.jpg" alt="">
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="contacts" id="contacts">
+        <div class="footer-left">
+            <div class="logo-big">Coffee & Go</div>
+            <p>Мы всегда рады вашим вопросам. Напишите нам!</p>
+        </div>
+
+        <div class="footer-right">
+            <h3>Остались вопросы?</h3>
+
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="text" name="phone" placeholder="Ваш номер телефона" required>
+                <textarea name="message" placeholder="Ваш вопрос"></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+
+            <p id="form-response"></p>
+        </div>
+    </section>
+
+    <!-- MENU MODAL (CAROUSEL) -->
+    <div class="menu-modal" id="menuModal">
+        <div class="carousel-container">
+            
+            <span class="close-modal" id="closeMenu">&times;</span>
+
+            <button class="nav-btn prev" id="prevPage">&#10094;</button>
+            <button class="nav-btn next" id="nextPage">&#10095;</button>
+
+            <div class="carousel">
+
+                <!-- Slide 1 -->
+                <div class="slide active">
+                 <img class="slide-photo" src="https://www.nespresso.com/ncp/res/uploads/recipes/nespresso-recipes-Americano-by-Nespresso.jpg" alt="">
+                    <div class="slide-text">
+                        <h2>Americano</h2>
+                        <p>200 ml — 13,000</p>
+                        <p>330 ml — 25,000</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide">
+                    <img class="slide-photo" src="https://dairyfarmersofcanada.ca/sites/default/files/image_file_browser/conso_recipe/2022/Capuccino.jpg" alt="">
+                    <div class="slide-text">
+                        <h2>Cappuccino</h2>
+                        <p>220 ml — 20,000</p>
+                        <p>300 ml — 25,000</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide">
+                    <img class="slide-photo" src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/314D11A6-4457-4C70-A1BE-A6C25F597C18/Derivates/B362DC69-6AAA-43E1-AF51-184463E8551B.jpg" alt="">
+                    <div class="slide-text">
+                        <h2>Latte</h2>
+                        <p>220 ml — 20,000</p>
+                        <p>350 ml — 28,000</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="slide">
+                    <img class="slide-photo" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/iced-latte-30188f7.jpg?quality=90&resize=440,400" alt="">
+                    <div class="slide-text">
+                        <h2>Ice Latte</h2>
+                        <p>200 ml — 20,000</p>
+                        <p>350 ml — 28,000</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
